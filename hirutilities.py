@@ -93,7 +93,7 @@ def showContact():
 
         userInput = input("\nReturn to main menu? (Y/N): ").lower()
         if userInput == "y":
-            mainMenu()
+            mainMenu(True)
         elif userInput == "n":
             closePrompt()
         else: 
@@ -139,7 +139,7 @@ def askSocial():
         askSocial()
     elif userInput == 0:
         print("\n Redirecting to main menu...")
-        mainMenu()
+        mainMenu(True)
     else:
         print(colorama.Fore.LIGHTRED_EX, "\nInavalid Input\n")
         askSocial()
@@ -158,7 +158,7 @@ def closePrompt():
     if userInput == 1:
         print("App Closed By User.")
     elif userInput == 2:
-        mainMenu()
+        mainMenu(True)
     else:
         print(colorama.Fore.LIGHTRED_EX, "\nInavalid Input\n")
         closePrompt()
