@@ -111,7 +111,7 @@ def showSocials():
 def askSocial():
 
     try:
-        userInput = int(input(colorama.Fore.RESET, "Enter An Option To Launch (0-7): "))
+        userInput = int(input("Enter An Option To Launch (0-7): "))
     except ValueError:
         print(colorama.Fore.LIGHTRED_EX, "\nInavalid Input\n")
         askSocial()
@@ -150,7 +150,7 @@ def openLink(url):
 def closePrompt():
     print("\n1. Close app\n2. Main Menu\n")
     try:
-        userInput = int(input(colorama.Fore.RESET, "Enter An Option (1-2): "))
+        userInput = int(input("Enter An Option (1-2): "))
     except ValueError:
         print(colorama.Fore.LIGHTRED_EX, "\nInavalid Input\n")
         closePrompt()
